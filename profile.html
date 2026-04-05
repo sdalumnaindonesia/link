@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Admin</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 18px;
+      color: #38bdf8;
+    }
+
+    .profile-icon img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid #38bdf8;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 25px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* PROFILE TOP */
+    .profile-top {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .profile-top img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+    }
+
+    .name {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    .role {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    /* GRID INFO */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .info {
+      background: rgba(255,255,255,0.05);
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .info span {
+      display: block;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .info strong {
+      font-size: 15px;
+    }
+
+    /* ACTION */
+    .actions {
+      margin-top: 25px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+
+    .back {
+      background: #38bdf8;
+    }
+
+    .logout {
+      background: #ef4444;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- CEK LOGIN -->
+<script>
+  if(localStorage.getItem("login") !== "true"){
+    window.location.href = "index.html";
+  }
+
+  function logout(){
+    localStorage.removeItem("login");
+    window.location.href = "index.html";
+  }
+</script>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h1>Profil Admin</h1>
+
+  <a href="profile.html" class="profile-icon">
+    <img src="foto.png">
+  </a>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+  <div class="card">
+
+    <div class="profile-top">
+      <img src="foto.png">
+      <div>
+        <div class="name">Rajab Sapta Hadi, S.T</div>
+        <div class="role">Administrator Sistem</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="info">
+        <span>Email</span>
+        <strong>rajabsaptahadi@gmail.com</strong>
+      </div>
+
+      <div class="info">
+        <span>No HP</span>
+        <strong>0822-8802-5797</strong>
+      </div>
+
+      <div class="info">
+        <span>Alamat</span>
+        <strong>Simpang Tiga, Kota Pekanbaru</strong>
+      </div>
+
+      <div class="info">
+        <span>Status</span>
+        <strong>Aktif</strong>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a href="daftar.html" class="btn back">⬅ Kembali</a>
+      <button onclick="logout()" class="btn logout">Logout</button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
