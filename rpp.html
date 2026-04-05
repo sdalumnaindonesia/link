@@ -112,12 +112,34 @@
         font-size: 12px;
         color: #64748b;
     }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile-icon img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid #38bdf8;
+    }
+
+    .profile-icon img:hover {
+        opacity: 0.8;
+    }
     </style>
 </head>
 <body>
 
     <div class="navbar">
-    <h1>Portal Admin</h1>
+        <h1>Portal Admin</h1>
+
+        <a href="profile.html" class="profile-icon">
+            <img src="foto.png" alt="profil">
+        </a>
     </div>
 
     <div class="hero">
