@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="alumna.png">
+    <title>RAPOR SD AIIS</title>
+    <style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+        margin: 0;
+        color: #38bdf8;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        margin-bottom: 1px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+        margin-bottom: 1px;
+    }
+
+        h1, h2 {
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    .hero p {
+        color: #94a3b8;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px 30px 40px;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.05);
+        border-radius: 16px;
+        padding: 20px;
+        backdrop-filter: blur(8px);
+        transition: 0.3s;
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .card:hover {
+        transform: translateY(-5px) scale(1.02);
+        border-color: #38bdf8;
+    }
+
+    .card h3 {
+        margin-top: 0;
+        color: #f1f5f9;
+    }
+
+    .card p {
+        color: #94a3b8;
+        font-size: 14px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #38bdf8, #6366f1);
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    .btn:hover {
+        opacity: 0.85;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+        color: #64748b;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile-icon img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid #38bdf8;
+    }
+
+    .profile-icon img:hover {
+        opacity: 0.8;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Portal Admin</h1>
+
+        <a href="profile.html" class="profile-icon">
+            <img src="foto.png" alt="profil">
+        </a>
+    </div>
+
+    <div class="hero">
+    <h1>DATA RAPOR DAN LEGGER</h1>
+    <h2>SD ALUMNA INDONESIA ISLAMIC SCHOOL</h2>
+    </div>
+
+    <div class="grid">
+
+    <div class="card">
+        <h3>RAPOR AR-RAHMAN</h3>
+        <p>Rapor Kelas Ar-Rahman SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1IFfnOFx4y3FdXTC-ACGz9OmT_x_Q8XiF?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AR-RAHIM</h3>
+        <p>Rapor Kelas Ar-Rahim SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1p8Z6o54LGzhc7gmP4WTTjGEXOUhwrj2u?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-FATTAH</h3>
+        <p>Rapor Kelas Al-Fattah SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/17i-OEeZmaDBCJe5kRzDiBgAbJyNk3aDP?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-LATIEF</h3>
+        <p>Rapor Kelas Al-Latief SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1BsJ16SPreTwZmKR__Tip4ZRyVo2feO1q?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-HALIM</h3>
+        <p>Rapor Kelas Al-Halim SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1TV2fyNj2TYmeglQJ61EjuCmWD6nrDPkt?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-HAKIM</h3>
+        <p>Rapor Kelas Al-Hakim SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1bQqbq_NbNENVHc-CIr0GQKDkP2nX8fz6?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-KARIM</h3>
+        <p>Rapor Kelas Al-Karim SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1513NVrbBhvlk6Pvu8vh_Ntd8DQnUtITk?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-MAJID</h3>
+        <p>Rapor Kelas Al-Majid SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1HLlrHV538sf8zpk25Rycey6RfhUM4csb?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-JALIL</h3>
+        <p>Rapor Kelas Al-Jalil SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/199v2QA5r0PjYpZX0GQ647fbUirVnIuRp?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AN-NUR</h3>
+        <p>Rapor Kelas An-Nur SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1t-GrSjlZJN_4tFxAM6ZHi94A1xYszEOo?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-QOYYUM</h3>
+        <p>Rapor Kelas Al-Qoyyum SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1Rs5XyLmig4xQ13E0q0ikvM0rKU75K5ee?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-WASI</h3>
+        <p>Rapor Kelas Al-Wasi SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1mrjSStX-QweR93L8KL03peUj--4IHSma?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-ALIM</h3>
+        <p>Rapor Kelas Al-Alim SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/14sXDxQqqyLkMXnEFUh886-rcENT1wWkJ?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    <div class="card">
+        <h3>RAPOR AL-JABBAR</h3>
+        <p>Rapor Kelas Al-Jabbar SD Alumna Indonesia Islamic School</p>
+        <a href="https://drive.google.com/drive/folders/1Kthtbt9xf9I3qgStX7Gz2sknIKA59dgq?usp=sharing" class="btn" target="_blank">Buka</a>
+    </div>
+
+    </div>
+
+    <footer>
+    © 2026 Rajab Sapta Hadi
+    </footer>
+
+</body>
+</html>
